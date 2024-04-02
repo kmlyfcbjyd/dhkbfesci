@@ -1,0 +1,195 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在验证....",
+    Duration = 3, 
+})
+local msg = Instance.new("Message",workspace)
+msg.Text = "欢迎使用阴星ohio"
+wait(2.5)
+msg:Destroy()
+local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title = "阴星",    Text = "耐心等待（☞♛☜）",    Duration = 5, })print("€Y❄")		local vu = game:GetService("VirtualUser")		game:GetService("Players").LocalPlayer.Idled:connect(function()		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		   wait(1)		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		end)
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "阴星脚本", HidePremium = false, SaveConfig = false, IntroText = "欢迎使用", ConfigFolder = "欢迎使用"})
+
+local Tab = Window:MakeTab({
+    Name = "脚本公告",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Tab:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+Tab:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+Tab:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+
+Tab:AddParagraph("作者","阴星")
+Tab:AddLabel("作者QQ：368483193")
+Tab:AddLabel("QQ群：390089673")
+Tab:AddLabel("此脚本己免费")
+local Tab = Window:MakeTab({
+    Name = "传送",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "银行大厅",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1094.521240234375, 8.159955978393555, -376.250244140625)
+  	end    
+})
+Tab:AddButton({
+	Name = "银行仓库",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1054.792724609375, 8.59450912475586, -351.9109191894531)
+  	end    
+})
+Tab:AddButton({
+	Name = "珠宝店",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1617.5030517578125, 8.369789123535156, -691.860107421875)
+  	end    
+})
+Tab:AddButton({
+	Name = "珠宝店山洞",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1523.4815673828125, 10.373621940612793, -894.8549194335938)
+  	end    
+})
+Tab:AddButton({
+	Name = "珠宝店仓库",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1723.3836669921875, 8.731038093566895, -757.7073364257812)
+  	end    
+})
+Tab:AddButton({
+	Name = "枪械店1",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(675.2023315429688, 6.245390892028809, -682.84765625)
+  	end    
+})
+Tab:AddButton({
+	Name = "2",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1596.4617919921875, 6.245391845703125, -622.2149658203125)
+  	end    
+})
+Tab:AddButton({
+	Name = "3",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1125.665283203125, 25.343887329101562, -1328.20166015625)
+  	end    
+})
+Tab:AddButton({
+	Name = "黑市",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(737.4558715820312, -23.10487937927246, -94.19850158691406)
+  	end    
+})
+local Tab = Window:MakeTab({
+    Name = "功能",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "修改攻击体积(hitbox)",
+	Callback = function()
+		_G.HeadSize = 55
+		_G.Disabled = true
+ 
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+							v.Character.HumanoidRootPart.Transparency = 0.7
+							v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+							v.Character.HumanoidRootPart.Material = "Neon"
+							v.Character.HumanoidRootPart.CanCollide = false
+						end)
+					end
+				end
+			end
+		end)
+	end,
+})
+Tab:AddButton({
+	Name = "绘制透视名字显示",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/tou"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "神F脚本通用脚本开速度会卡顿使用范围就会取消卡顿",
+	Callback = function()
+      	CK_V1 = "作者_神罚"SheFa = "刺客群637340150"loadstring(game:HttpGet(('https://raw.githubusercontent.com/WDQi/SF/main/%E7%9C%8B%E4%BD%A0M.txt')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "无限跳",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+  	end    
+})
+Tab:AddToggle({
+  Name = "穿墙",
+  Default = false,
+  Callback = function(Value)
+    if Value then
+      Noclip = true
+      Stepped = game.RunService.Stepped:Connect(function()
+        if Noclip == true then
+          for a, b in pairs(game.Workspace:GetChildren()) do
+            if b.Name == game.Players.LocalPlayer.Name then
+              for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                if v:IsA("BasePart") then
+                  v.CanCollide = false
+                end
+              end
+            end
+          end
+         else
+          Stepped:Disconnect()
+        end
+      end)
+     else
+      Noclip = false
+    end
+  end
+})
+Tab:AddTextbox({
+	Name = "范围修改",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(value)
+	  print(value)
+_G.HeadSize = value
+_G.Disabled = true
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+   end
+})
+tab:Toggle("自动抢银行", false, function(v)
+    AutoRobBank = v
+        
+        if AutoRobBank then
+            pcall(function()
+                AutoRobBankFunc()
+            end)
+        end
+end)
